@@ -92,6 +92,6 @@ margin: 2.3%;
   background-image: url(waffletrans1.jpg);
   background-repeat: no-repeat;
   background-color: #edf6ff;
-  background-position: 50% 20%;
+  background-attachment: scroll;
   background-size: 110% 39%;
  }
