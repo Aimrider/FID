@@ -84,6 +84,7 @@ div img {
 margin: 2.3%;
 }
 @media screen and (min-width: 400px) {
+ 
  body {
   color: black;
   font-family: san-serif;
