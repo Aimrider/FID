@@ -1,0 +1,121 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Bubble Waffle: Mobile Ordering</title>
+   <style type="text/css">
+      body {
+color: black;
+font-family: san-serif;
+font-size: 16px;
+line-height: 1.25em;
+background-image: url(waffletrans1.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-color: #edf6ff;
+background-position: 85% 80%;
+background-size: 35% 90%;
+}
+  ol, ul { 
+     list-style-type: none;
+      }
+   aside {
+  float: right;
+  margin-right: 700px;
+  }
+body {
+margin: 0% 6%;
+}
+   </style>
+</head>
+
+<body>
+
+<h1><img src="image/logo.jpg" width="300" height="220"></img> | Mobile Ordering</h1>
+
+<p>Avoid the lines and get your Bubble Waffles <b>now</b>.<br> With our Mobile Order and 
+system, we'll start making your <i>Fresh and Hot</i> Waffle Cone before you even arrive. <br>
+When you come in, just state your name and the time/date of the order. Once we confirm your 
+order, we'll scoop <br>your choice of icecream
+</p>
+
+<fieldset>
+<legend>Your Information</legend>
+<form action= "http://www.bubblewaffle.com/yummy.php" method="POST">
+<ul>
+  <li>Name:<input type="text" name="customername" maxlength="20"></li>
+  <br><li>Telephone Number:<input type="text" name="telephone" maxlength="14" placeholder="(...)...-...."></li>
+  <p>If you have any problems, delays, or cancellations, call us at (407)-228-WAFF</p>
+  <p>Become a Bubble Waff member and earn new deals, coupons, and prizes every month</p>
+<li>Email:<input type="text" name="email"></li>
+</ul>
+</form>
+</fieldset>
+
+<h2>Flavor TIME !</h2>
+
+<fieldset>
+<legend>Customize your Order</legend>
+
+<fieldset>
+<legend>Waffle <em>(Choose one)</em>:</legend>
+<ul>
+  <aside> 
+  <li><input type="radio" name="crust">Lemon</li>
+  <li><input type="radio" name="crust">Wasabi</li>
+  <li><input type="radio" name="crust">Red Bean</li>
+  <li><input type="radio" name="crust">Apple Pie</li>
+  <li><input type="radio" name="crust">Peanut Butter</li>
+  <li><input type="radio" name="crust">Pistachio</li>
+<li><input type="radio" name="crust">We also have plain<i>Gluten Free</i></li>
+</aside>
+<li><input type="radio" name="crust">Plain</li>
+  <li><input type="radio" name="crust">Strawberry</li>
+  <li><input type="radio" name="crust">Chocolate</li>
+  <li><input type="radio" name="crust">Bananna</li>
+  <li><input type="radio" name="crust">Blueberry</li>
+  <li><input type="radio" name="crust">Maple</li>
+  <li><input type="radio" name="crust">Red Velvet</li>
+</ul>
+</fieldset>
+
+<fieldset>
+<legend>Candy Toppings <em>(Choose as many as you want)</em>:</legend>
+<ul>
+ <aside>
+  <li><input type="checkbox" name="topping">Cherry</li>
+  <li><input type="checkbox" name="topping">Kit-Kat</li>
+  <li><input type="checkbox" name="topping">Peanut Butter Crackers</li>
+  <li><input type="checkbox" name="topping">Gummi Bears</li>
+  <li><input type="checkbox" name="topping">Candy Rocks</li>
+  <li><input type="checkbox" name="topping">Popping Candy</li>
+  <li><input type="checkbox" name="topping">Fudge Drizzle</li>
+  <li><input type="checkbox" name="topping">Caramel Sauce</li>
+  <li><input type="checkbox" name="topping">Peanut Butter</li>
+  <li><input type="checkbox" name="topping">Strawberry Sauce</li>
+  <li><input type="checkbox" name="topping">Cotton Candy (extra $1)</li>
+ </aside>
+  <li><input type="radio" name="topping">Whipping Cream</li>
+  <li><input type="radio" name="topping">No Whipping Cream</li>
+  <li><input type="checkbox" name="topping">Sprinkles</li>
+  <li><input type="checkbox" name="topping">Fruit balls</li>
+  <li><input type="checkbox" name="topping">Oreos</li>
+  <li><input type="checkbox" name="topping">Oreos Crumbs</li>
+  <li><input type="checkbox" name="topping">Gummi Worms</li>
+  <li><input type="checkbox" name="topping">Strawberries</li>
+  <li><input type="checkbox" name="topping">Blueberries</li>
+  <li><input type="checkbox" name="topping">M&Ms</li>
+  <li><input type="checkbox" name="topping">Skittles</li>
+</ul>
+</fieldset>
+
+<fieldset>
+<legend>Number</legend>
+<p>Number of Orders:<input type="number" name="number of orders"><p>
+</fieldset>
+</fieldset>
+
+<p><input type="submit" value="Let's Get our Waffle On!"> <input type="reset" value="Start New Order"></p>
+<a href="bubblewaffles.html">[Go back to Page]</a>
+</body>
+</html>
