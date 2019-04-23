@@ -135,10 +135,10 @@ box-sizing: inherit;
   #container {
   display: grid;
   grid-template-rows: auto min-height 5em;
-  grid-template-columns: minmax(25em, 1fr) 10em;
+  grid-template-columns: minmax(25em, 1fr) 16em;
   grid-template-areas:
    "banner banner"
-   "main main"
+   "main hours"
    "footer footer";
   max-width: 1200px;
   margin: 0 auto;
@@ -148,8 +148,7 @@ box-sizing: inherit;
   grid-area: banner;
  }
  aside {
-  grid-area: main;
-  background: url(images/scallop.png) repeat-y left top;
+  grid-area: hours;
   background-color: #F6F3ED;
   padding: 1em;
   padding-left: 45px;
@@ -158,9 +157,9 @@ box-sizing: inherit;
   grid-area: footer;
  }
  #award {
-  position: fixed;
-  top: 35px;
-  left: 830px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
  }
  header p {
   display: block;
@@ -180,7 +179,7 @@ box-sizing: inherit;
   padding: 1em;
   border: double 4px #EADDC4;
   border-radius: 25px;
-  margin: 2% 7%;
+  margin: 2.5%;
   grid-area: main;
  }
  main img {
@@ -194,4 +193,3 @@ box-sizing: inherit;
   justify-content: center;
  }
 }
-
