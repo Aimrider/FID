@@ -1,0 +1,205 @@
+@charset "UTF-8";
+body {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 100%;
+  background-image: url(waffletrans1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #edf6ff;
+  background-position: 123% -4%;
+}
+#container {
+ display: grid;
+ grid-template-rows: auto auto 5em;
+ grid-template-columns: minmax(25em, 1fr) 16em;
+ grid-template-areas:
+  "banner hours"
+  "main hours"
+  "footer hours";
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  padding-bottom: .2em;
+}
+.white {
+  text-color: white;
+}
+header {
+  color: grey;
+  background-color: white;
+  background-size: cover; 
+  height: 10em;
+  grid-area: banner;
+}
+header p {
+  font-style: normal;
+  font-size: 1.2em;
+  margin-top: -12px;
+}
+header h1 {
+  margin-top: 1.5em;
+}
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: grey;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: white;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: yellow;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+nav ul li a {
+ display: block;
+ border: 1px solid;
+ border-radius: .5em;
+ padding: .5em 1em;
+ margin: .5em;
+}
+main {
+  font-family: 'Stint Ultra Expanded', cursive;
+  background-color: white;
+  line-height: 1.8em;
+  color: #555;
+  padding: 1em;
+  border: double 6px grey;
+  border-radius: 55px;
+  grid-area: main;
+}
+main img {
+ float: left;
+ margin: 0 1em 1em 0;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: grey;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  padding-left: 1em;
+  margin-top: 2em;
+}
+h3.icecream {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: grey;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  padding-left: 1em;
+  margin-top: .5em;
+}
+p.more {
+  font-family: verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+  clear: left;
+}
+footer {
+  color: white;
+  background-color: grey;
+  text-align: center;
+  font-size: .8em;
+  margin-bottom: 1em;
+  padding: 1em;
+  grid-area: footer;
+}
+#award {
+  top: 35px;
+  left: 50px;
+}
+h2 {
+  font-family: 'Stint Ultra Expanded', cursive;
+}
+.day {
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+html {
+box-sizing: border-box;
+}
+* {
+box-sizing: inherit;
+}
+
+@media screen and (min-width: 400px) {
+  #container {
+  display: grid;
+  grid-template-rows: auto min-height 5em;
+  grid-template-columns: minmax(25em, 1fr) 16em;
+  grid-template-areas:
+   "banner hours"
+   "main hours"
+   "footer hours";
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+ }
+ header {
+  grid-area: banner;
+ }
+ aside {
+  grid-area: hours;
+  background: url(images/scallop.png) repeat-y left top;
+  background-color: #F6F3ED;
+  padding: 1em;
+  padding-left: 45px;
+ }
+ footer {
+  grid-area: footer;
+ }
+ #award {
+  position: absolute;
+  top: -7px;
+  left: -85px;
+ }
+ header p {
+  display: block;
+  margin-top: -1.5em;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.2em;
+}
+ main, h2, h3 {
+  font-family: 'stint Ultra Expanded', Georgia, serif;
+ }
+ h2, h3 {
+  font-weight: bold;
+ }
+ main {
+  line-height: 1.8em;
+  padding: 1em;
+  border: double 4px #EADDC4;
+  border-radius: 25px;
+  margin: 2.5%;
+  grid-area: main;
+ }
+ main img {
+  float: left;
+  margin: 0 1em 1em 0;
+ }
+ nav ul li {
+  flex: none;
+ }
+ nav ul {
+  justify-content: center;
+ }
+}
+
