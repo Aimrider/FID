@@ -3,14 +3,11 @@ body {
   font-family: Georgia, serif;
   text-align: center;
   font-size: 100%;
-  /* background-image: url(waffletrans1.jpg);
-  background-repeat: no-repeat; */
-  background-color: #edf6ff;
-  /* background-position: -3% 20%;
-  background-size: 30% 39%; */
-  /* background: url(image/bubble.jpg) repeat center center;
+  background-image: url(waffletrans1.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0%; */
+  background-color: #edf6ff;
+  background-position: 123% -4%;
 }
 #container {
  display: grid;
