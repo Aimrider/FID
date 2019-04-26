@@ -127,9 +127,9 @@ h2 {
   font-family: 'Stint Ultra Expanded', cursive;
 }
 .day {
-  color: #783F27;
+  color: grey;
   font-family: verdana, sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 html {
